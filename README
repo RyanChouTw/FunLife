@@ -1,0 +1,22 @@
+/*********************	Abstract	*********************************/
+
+	FunLife was created by Ryan Chou (ryanchou0210@gmail.com) in 2013 
+	It is an Android App and developed in Android Studio. 
+
+
+/*********************	Feature		**********************************/
+	Its major feature is to find the famous scenary nearby/in specified area.
+	In addition, it might combine the user data retrieved from Facebook. 
+	Provided FB data, it could provides scenary user may be interested.
+
+																		
+/********************	Language	*********************************/
+	Sor far FunLife only support the languages listed below:
+ 		a. English
+ 		b. Tranditional-Chineise
+ 	
+/********************	Arthur		*********************************/
+	Name:		Ryan Chou
+	Blog:		http://ryan0210.blogspot.tw/
+	Google+:	gplus.to/ryanchou0210
+	Email:		ryanchou0210@gmail.com	

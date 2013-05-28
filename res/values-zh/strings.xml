@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">趣生活</string>
+    <string name="about">關於</string>
+    <string name="string_scene_nearby">附近</string>
+    <string name="string_scene_area">特定區域</string>
+    <string name="string_look_for_fun">找樂趣</string>
+    <string name="string_title_county_list">選擇縣市</string>
+    <string name="string_scene_list">景點列表</string>
+    <string name="wait">請稍等</string>
+    <string name="retrieve_data">接收資料中...</string>
+    <string-array name="countyListArray">
+        <item >台北市</item>
+        <item >新北市</item>
+        <item >台中市</item>
+        <item >台南市</item>
+        <item >高雄市</item>
+        <item >基隆市</item>
+        <item >宜蘭縣</item>
+        <item >花蓮縣</item>
+        <item >台東縣</item>
+        <item >桃園縣</item>
+        <item >新竹縣</item>
+        <item >新竹市</item>
+        <item >苗栗縣</item>
+        <item >彰化縣</item>
+        <item >南投縣</item>
+        <item >嘉義縣</item>
+        <item >嘉義市</item>
+        <item >雲林縣</item>
+        <item >屏東縣</item>
+        <item >連江縣</item>
+        <item >澎湖縣</item>
+        <item >金門縣</item>       
+    </string-array>
+	<string name="string_error_dialog_title">錯誤</string>
+	<string name="string_error_no_location">無法定位</string>
+	<string name="string_ok">確定</string>
+    <string name="string_author">作者</string>
+    <string name="string_blog">部落格</string>
+    <string name="string_google_plug">Google+</string>
+    <string name="string_detail">詳情</string>
+    <string name="string_share">分享</string>
+    <string name="exit">結束</string>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_main_blue">#6dc6ff</color>
+    <string name="app_name">FunLife</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="about">About</string>
+    <string name="menu_settings">Settings</string>
+    <string name="string_scene_nearby">Nearby</string>
+    <string name="string_scene_area">Specific area</string>
+    <string name="string_look_for_fun">Look for your fun:</string>
+    <string name="string_scene_list">Scene list</string>
+    <string name="string_content_des_highlight_bar">Highlight bar</string>
+    <string name="string_title_county_list">Select a county</string>
+    <string name="wait">Please wait</string>
+    <string name="retrieve_data">Retrieving data</string>
+    <string name="app_id">568259136518141</string>
+    <string-array name="countyListArray">
+        <item >Taipei City</item>
+        <item >New Taipei City</item>
+        <item >Taichung City</item>
+        <item >Tainan City</item>
+        <item >Kaohsiung City</item>
+        <item >Keelung City</item>
+        <item >Yilan County</item>
+        <item >Hualien County</item>
+        <item >Taitung County</item>
+        <item >Taoyuan County</item>
+        <item >Hsinchu County</item>
+        <item >Hsinchu City</item>
+        <item >Miaoli County</item>
+        <item >Changhua County</item>
+        <item >Nantou County</item>
+        <item >Chiayi County</item>
+        <item >Chiayi City</item>
+        <item >Yunlin County</item>
+        <item >Pingtung County</item>
+        <item >Lienchiang County</item>
+        <item >Penghu County</item>
+        <item >Kinmen County</item>
+	</string-array>
+    <string name="string_error_dialog_title">Error</string>
+    <string name="string_error_no_location">No location</string>
+    <string name="string_ok">OK</string>
+    <string name="string_author">Author</string>
+    <string name="string_blog">Blog</string>
+    <string name="string_google_plug">Google+</string>
+    <string name="string_detail">Detail</string>
+    <string name="string_share">Share</string>
+    <string name="exit">Exit</string>
+
+</resources>

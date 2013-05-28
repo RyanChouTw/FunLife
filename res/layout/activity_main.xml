@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_greeting_relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main_blue"
+    tools:context=".CountyListActivity">
+
+    <Button
+        android:id="@+id/main_btn_nearby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/main_img_btn_nearby"
+        android:text="@string/string_scene_nearby"
+        android:textSize="26dp"
+        android:textColor="@color/color_white"/>
+
+    <Button
+            android:id="@+id/main_btn_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/main_btn_nearby"
+            android:background="@drawable/main_img_btn_nearby"
+            android:layout_marginTop="26dp"
+            android:text="@string/string_scene_area"
+            android:textSize="26dp"
+            android:textColor="@color/color_white"/>
+
+    <TextView
+            android:layout_marginTop="32sp"
+            android:layout_marginLeft="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/string_look_for_fun"
+            android:id="@+id/main_greeting_header"
+            android:textColor="@color/color_white"
+            android:textSize="36sp"/>
+
+
+</RelativeLayout>
