@@ -48,5 +48,7 @@
     <string name="string_detail">Detail</string>
     <string name="string_share">Share</string>
     <string name="exit">Exit</string>
+    <string name="string_share_message">Funlife is a really cool App. So that you should not miss it!</string>
+    <string name="string_more">More...</string>
 
 </resources>
