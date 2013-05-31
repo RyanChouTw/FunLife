@@ -50,5 +50,8 @@
     <string name="exit">Exit</string>
     <string name="string_share_message">Funlife is a really cool App. So that you should not miss it!</string>
     <string name="string_more">More...</string>
-
+    <string name="string_tel">TEL</string>
+    <string name="string_addr">ADDR</string>
+    <string name="string_website">Website</string>
+    <string name="string_review">Reviews</string>
 </resources>

@@ -3,6 +3,7 @@ package com.realtek.funlife;
 import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.location.Criteria;
@@ -63,7 +64,10 @@ public class SceneListActivity extends FragmentActivity implements LocationListe
                 startSearchPlace(true);
             }
             else {
-
+                HashMap<String, String> placeInfo = mPlacesList.get(position);
+                Intent intentStartSceneDetailActivity = new Intent(SceneListActivity.this, SceneDetailActivity.class);
+                intentStartSceneDetailActivity.putExtra(FunLifeUtils.KEY_PLACE_REFERENCE, placeInfo.get("reference"));
+                startActivity(intentStartSceneDetailActivity);
             }
         }
     };
@@ -166,39 +170,12 @@ public class SceneListActivity extends FragmentActivity implements LocationListe
 
     }
 
-    private String downloadUrl(String strUrl) throws IOException {
-        String data = "";
-        InputStream iStream = null;
-        HttpURLConnection urlConnection = null;
-
-        try {
-            URL url = new URL(strUrl);
-            urlConnection = (HttpURLConnection) url.openConnection();
-            urlConnection.connect();
-            iStream = urlConnection.getInputStream();
-            BufferedReader br = new BufferedReader(new InputStreamReader(iStream));
-            StringBuffer sb = new StringBuffer();
-            String line = "";
-            while ((line = br.readLine()) != null) {
-                sb.append(line);
-            }
-            data = sb.toString();
-            br.close();
-        }catch (Exception e) {
-            Log.d(FunLifeUtils.APPTAG, "Exception while downloading url"+e.toString());
-        }finally {
-            iStream.close();
-            urlConnection.disconnect();
-        }
-        return data;
-    }
-
     private class PlacesTask extends AsyncTask<String, Integer, String>{
         String data = null;
 
         protected String doInBackground(String... url) {
             try {
-                data = downloadUrl(url[0]);
+                data = FunLifeUtils.downloadUrl(url[0]);
             }catch(Exception e) {
                 Log.d(FunLifeUtils.APPTAG, "Background task" + e.toString());
             }
@@ -233,7 +210,6 @@ public class SceneListActivity extends FragmentActivity implements LocationListe
                 }
 
                 if (places != null && places.size() > 0) {
-                    mPlacesList.clear();
                     Bitmap iconBmp;
                     for (int i = 0; i < places.size(); ++i) {
                         InputStream in = new java.net.URL(places.get(i).get("place_icon")).openStream();

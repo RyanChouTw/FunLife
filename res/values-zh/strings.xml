@@ -45,4 +45,8 @@
     <string name="exit">結束</string>
     <string name="string_share_message">趣生活真的很棒，趕快跟我一起試試看！</string>
     <string name="string_more">更多‧‧‧</string>
+    <string name="string_tel">電話</string>
+    <string name="string_addr">地址</string>
+    <string name="string_website">網址</string>
+    <string name="string_review">評論</string>
 </resources>
