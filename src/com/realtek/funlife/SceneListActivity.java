@@ -8,28 +8,30 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.location.Criteria;
 import android.location.Location;
-import android.location.LocationManager;
 import android.location.LocationListener;
+import android.location.LocationManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.*;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ImageView;
+import android.widget.ListView;
+import android.widget.TextView;
+
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -100,25 +102,33 @@ public class SceneListActivity extends FragmentActivity implements LocationListe
 
             // Getting Current Location From GPS
             Location location = mLocationManager.getLastKnownLocation(provider);
-
-            // Initialization
-            int selected = getIntent().getIntExtra("Selected", -1);
-            if (selected == -1) {
-                // Nearby
-                // Create a new global location parameters object
-
-
-            } else {
-                // Specified are
-
-            }
-
             if(location!=null){
                 onLocationChanged(location);
             }
             mLocationManager.requestLocationUpdates(provider, FunLifeUtils.UPDATE_INTERVAL_IN_MILLISECONDS, FunLifeUtils.UPDATE_DISTANCE_IN_METERS, this);
         }
 	};
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        menu.add(0, FunLifeUtils.MENU_ABOUT, 0, R.string.about);
+        menu.add(0, FunLifeUtils.MENU_EXIT, 0, R.string.exit);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch(item.getItemId()) {
+            case FunLifeUtils.MENU_ABOUT:
+                Intent intentStartAboutActivity = new Intent(SceneListActivity.this, AboutActivity.class);
+                startActivity(intentStartAboutActivity);
+                break;
+            case FunLifeUtils.MENU_EXIT:
+                finish();
+                break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 
     @Override
     public void onLocationChanged(Location location) {
@@ -247,19 +257,12 @@ public class SceneListActivity extends FragmentActivity implements LocationListe
 
         @Override
         public int getCount() {
-            if (mIsMoreResult == true) {
-                return items.size()+1;  // +1 for More
-            } else {
-                return items.size();
-            }
+            return items.size();
         }
 
         @Override
         public int getItemViewType(int position) {
-            if (position == items.size())
-                return SCENELIST_ITEM_TYPE_MORE;
-            else
-                return SCENELIST_ITEM_TYPE_NORMAL;
+            return SCENELIST_ITEM_TYPE_NORMAL;
         }
 
         @Override
@@ -274,37 +277,27 @@ public class SceneListActivity extends FragmentActivity implements LocationListe
             int itemType = getItemViewType(position);
 
             if (v == null) {
-                if (itemType == SCENELIST_ITEM_TYPE_NORMAL) {
-                    v = vi.inflate(R.layout.scenelist_item, parent, false);
-                } else {
-                    v = vi.inflate(R.layout.scenelist_item_more, parent, false);
-                }
+                v = vi.inflate(R.layout.scenelist_item, parent, false);
             }
 
-            if (itemType == SCENELIST_ITEM_TYPE_NORMAL) {
-                HashMap<String, String> place = items.get(position);
-                if (place != null) {
-                    ImageView leftImage = (ImageView) v.findViewById(R.id.leftimage);
-                    TextView topText = (TextView) v.findViewById(R.id.toptext);
-                    TextView bottomText = (TextView) v.findViewById(R.id.bottomtext);
-                    if (leftImage != null) {
-                        leftImage.setImageBitmap(mPlacesIconList.get(position));
-                    }
-                    if (topText != null) {
-                        topText.setText(place.get("place_name"));
-                    }
-                    if(bottomText != null){
-                        bottomText.setText(place.get("vicinity"));
-                    }
+            HashMap<String, String> place = items.get(position);
+            if (place != null) {
+                ImageView leftImage = (ImageView) v.findViewById(R.id.leftimage);
+                TextView topText = (TextView) v.findViewById(R.id.toptext);
+                TextView bottomText = (TextView) v.findViewById(R.id.bottomtext);
+                if (leftImage != null) {
+                    leftImage.setImageBitmap(mPlacesIconList.get(position));
                 }
-            } else {
-                TextView text = (TextView) v.findViewById(R.id.text);
-                if (text != null) {
-                    text.setText(getString(R.string.string_more));
+                if (topText != null) {
+                    topText.setText(place.get("place_name"));
+                }
+                if(bottomText != null){
+                    bottomText.setText(place.get("vicinity"));
                 }
             }
             return v;
         }
     }
+
 
 }
