@@ -52,7 +52,6 @@ public final class FunLifeUtils {
 
     /* Google Place API */
     public static final String GooglePlaceAPIKey = "AIzaSyBySFU4fpLIA-CtefMPlekUna2KWte2i3U";
-    public static final int NumResultPerGooglePlaceAPI = 20;
 
     /* Menu ID  */
     public static final int MENU_ABOUT = Menu.FIRST;
@@ -65,8 +64,29 @@ public final class FunLifeUtils {
     public static final String Blog="ryan0210.blogspot.tw";
     public static final String GooglePlus="gplus.to/ryanchou0210";
 
+    /* Keys of Place API */
+    public static final String KEY_PLACE_NAME = "name";
+    public static final String KEY_PLACE_ICON ="icon";
+    public static final String KEY_PLACE_GEOMETRY = "geometry";
+    public static final String KEY_PLACE_LOCATION = "location";
+    public static final String KEY_PLACE_LOCATION_LAT = "lat";
+    public static final String KEY_PLACE_LOCATION_LNG = "lng";
+    public static final String KEY_PLACE_TEL = "formatted_phone_number";
+    public static final String KEY_PLACE_ADDR = "formatted_address";
+    public static final String KEY_PLACE_WEBSITE = "website";
+    public static final String KEY_PLACE_RATING = "rating";
+    public static final String KEY_PLACE_REVIEWS = "reviews";
+
+
+    public static final String KEY_PLACE_REVIEW_AUTHOR = "author_name";
+    public static final String KEY_PLACE_REVIEW_COMMENT = "text";
+    public static final String KEY_PLACE_REVIEW_TIME = "time";
+
     /* Key to intent extra */
-    public static final String KEY_PLACE_REFERENCE = "PLACE_REFERENCE";
+    public static final String INTENT_KEY_PLACE_REFERENCE = "PLACE_REFERENCE";
+    public static final String INTENT_KEY_PLACE_NAME = "PLACE_NAME";
+    public static final String INTENT_KEY_PLACE_ADDR = "PLACE_ADDR";
+    public static final String INTENT_KEY_PLACE_LATLNG = "PLACE_LATLNG";
 
     public static String downloadUrl(String strUrl) throws IOException {
         String data = "";

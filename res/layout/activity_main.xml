@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/color_main_blue"
-    tools:context=".CountyListActivity">
+    tools:context=".MaintActivity">
 
     <Button
         android:id="@+id/main_btn_nearby"

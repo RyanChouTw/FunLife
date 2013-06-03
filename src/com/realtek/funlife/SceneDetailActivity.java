@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.text.format.Time;
@@ -12,10 +13,14 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import com.google.android.gms.maps.model.LatLng;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -39,6 +44,37 @@ public class SceneDetailActivity extends Activity {
     private int mNumItem = 0;
     private int mReviewOffset = 0;
 
+    private AdapterView.OnItemClickListener mListListener = new AdapterView.OnItemClickListener() {
+        @Override
+        public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
+            // TODO Auto-generated method stub
+            Log.d("SceneDetailActivity", "AdapterView.OnItemClickListener.onItemClick() - get item number " + position);
+            mListView.setSelection(position);
+
+            Intent intent;
+            switch (mItemDataType.get(position)) {
+                case PlaceDetailItem.ITEM_TEL:
+                    intent = new Intent(Intent.ACTION_DIAL);
+                    intent.setData(Uri.parse(mPlace.mTel));
+                    startActivity(intent);
+                    break;
+                case PlaceDetailItem.ITEM_ADDR:
+                    intent = new Intent(SceneDetailActivity.this, MapActivity.class);
+                    intent.putExtra(FunLifeUtils.INTENT_KEY_PLACE_NAME, mPlace.mName);
+                    intent.putExtra(FunLifeUtils.INTENT_KEY_PLACE_ADDR, mPlace.mAddress);
+                    intent.putExtra(FunLifeUtils.INTENT_KEY_PLACE_LATLNG, mPlace.mLatLng);
+                    startActivity(intent);
+                    break;
+                case PlaceDetailItem.ITEM_WEBSITE:
+                    intent = new Intent(Intent.ACTION_VIEW, Uri.parse(mPlace.mWebSiteURL));
+                    startActivity(intent);
+                    break;
+                default:
+                    break;
+            }
+        }
+    };
+
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scene_detail);
@@ -46,10 +82,12 @@ public class SceneDetailActivity extends Activity {
         mListView = (ListView) findViewById(R.id.scene_detail_list);
 
         Intent intent = getIntent();
-        mPlace.mReference = intent.getStringExtra(FunLifeUtils.KEY_PLACE_REFERENCE);
+        mPlace.mReference = intent.getStringExtra(FunLifeUtils.INTENT_KEY_PLACE_REFERENCE);
 
         mAdapter = new PlaceDetailAdapter(this, R.id.scene_detail_list);;
         mListView.setAdapter(mAdapter);
+
+        mListView.setOnItemClickListener(mListListener);
     }
 
     @Override
@@ -104,41 +142,50 @@ public class SceneDetailActivity extends Activity {
 
                 /** Getting the parsed data as a List construct */
                 mNumItem = 0;
-                if (!jQueryResult.isNull("name")) {
-                    mPlace.mName = jQueryResult.getString("name");
+                if (!jQueryResult.isNull(FunLifeUtils.KEY_PLACE_NAME)) {
+                    mPlace.mName = jQueryResult.getString(FunLifeUtils.KEY_PLACE_NAME);
                     mItemDataType.add(PlaceDetailItem.ITEM_NAME);
                     mNumItem++;
 
-                    if (!jQueryResult.isNull("icon")) {
-                        InputStream in = new java.net.URL(jQueryResult.getString("icon")).openStream();
+                    if (!jQueryResult.isNull(FunLifeUtils.KEY_PLACE_ICON)) {
+                        InputStream in = new java.net.URL(jQueryResult.getString(FunLifeUtils.KEY_PLACE_ICON)).openStream();
                         mPlace.mIcon = BitmapFactory.decodeStream(in);
                     }
                 }
-                if (!jQueryResult.isNull("formatted_phone_number")) {
-                    mPlace.mTel = jQueryResult.getString("formatted_phone_number");
+
+                if (!jQueryResult.isNull(FunLifeUtils.KEY_PLACE_GEOMETRY)) {
+                    JSONObject jGeoObject = jQueryResult.getJSONObject(FunLifeUtils.KEY_PLACE_GEOMETRY);
+                    if (!jGeoObject.isNull(FunLifeUtils.KEY_PLACE_LOCATION)) {
+                        JSONObject jLocation = jGeoObject.getJSONObject(FunLifeUtils.KEY_PLACE_LOCATION);
+                        mPlace.mLatLng = new LatLng(jLocation.getDouble(FunLifeUtils.KEY_PLACE_LOCATION_LAT), jLocation.getDouble(FunLifeUtils.KEY_PLACE_LOCATION_LNG));
+                    }
+                }
+                if (!jQueryResult.isNull(FunLifeUtils.KEY_PLACE_TEL)) {
+                    mPlace.mTel = jQueryResult.getString(FunLifeUtils.KEY_PLACE_TEL);
                     mItemDataType.add(PlaceDetailItem.ITEM_TEL);
                     mNumItem++;
                 }
-                if (!jQueryResult.isNull("formatted_address")) {
-                    mPlace.mAddress = jQueryResult.getString("formatted_address");
+                if (!jQueryResult.isNull(FunLifeUtils.KEY_PLACE_ADDR)) {
+                    mPlace.mAddress = jQueryResult.getString(FunLifeUtils.KEY_PLACE_ADDR);
                     mItemDataType.add(PlaceDetailItem.ITEM_ADDR);
                     mNumItem++;
                 }
-                if (!jQueryResult.isNull("website")) {
-                    mPlace.mWebSiteURL = jQueryResult.getString("website");
+                if (!jQueryResult.isNull(FunLifeUtils.KEY_PLACE_WEBSITE)) {
+                    mPlace.mWebSiteURL = jQueryResult.getString(FunLifeUtils.KEY_PLACE_WEBSITE);
                     mItemDataType.add(PlaceDetailItem.ITEM_WEBSITE);
                     mNumItem++;
                 }
 
-                if (!jQueryResult.isNull("rating")) {
-                    mPlace.mRating = jQueryResult.getDouble("rating");
+                if (!jQueryResult.isNull(FunLifeUtils.KEY_PLACE_RATING)) {
+                    mPlace.mRating = jQueryResult.getDouble(FunLifeUtils.KEY_PLACE_RATING);
                 }
-                jReview = jQueryResult.getJSONArray("reviews");
+                jReview = jQueryResult.getJSONArray(FunLifeUtils.KEY_PLACE_REVIEWS);
                 int numReview = jReview.length();
                 if (numReview > 0) {
                     mItemDataType.add(PlaceDetailItem.ITEM_REVIEW_HEADER);
                     mNumItem++;
                     mReviewOffset = mNumItem;
+                    mPlace.mReviews.clear();
                     for (int i = 0; i < numReview; ++i) {
                         mPlace.mReviews.add(getReview(jReview.getJSONObject(i)));
                         mItemDataType.add(PlaceDetailItem.ITEM_REVIEW);
@@ -162,14 +209,14 @@ public class SceneDetailActivity extends Activity {
 
         try {
             // Extracting Place name, if available
-            if(!jReview.isNull(PlaceReviewKeys.key_author)) {
-                review.mAuthorName = jReview.getString(PlaceReviewKeys.key_author);
+            if(!jReview.isNull(FunLifeUtils.KEY_PLACE_REVIEW_AUTHOR)) {
+                review.mAuthorName = jReview.getString(FunLifeUtils.KEY_PLACE_REVIEW_AUTHOR);
             }
-            if(!jReview.isNull(PlaceReviewKeys.key_comment)) {
-                review.mComment = jReview.getString(PlaceReviewKeys.key_comment);
+            if(!jReview.isNull(FunLifeUtils.KEY_PLACE_REVIEW_COMMENT)) {
+                review.mComment = jReview.getString(FunLifeUtils.KEY_PLACE_REVIEW_COMMENT);
             }
-            if(!jReview.isNull(PlaceReviewKeys.key_time)) {
-                review.mTime = jReview.getLong(PlaceReviewKeys.key_time);
+            if(!jReview.isNull(FunLifeUtils.KEY_PLACE_REVIEW_TIME)) {
+                review.mTime = jReview.getLong(FunLifeUtils.KEY_PLACE_REVIEW_TIME);
             }
         } catch (JSONException e) {
             e.printStackTrace();
@@ -196,6 +243,7 @@ public class SceneDetailActivity extends Activity {
 
     private class PlaceDetails {
         public String mReference;
+        public LatLng mLatLng;
         public Bitmap mIcon;
         public String mName;
         public String mTel;
@@ -209,12 +257,6 @@ public class SceneDetailActivity extends Activity {
         public String mAuthorName;
         public String mComment;
         public long mTime;
-    }
-
-    private class PlaceReviewKeys {
-        public static final String key_author = "author_name";
-        public static final String key_comment = "text";
-        public static final String key_time = "time";
     }
 
     private class PlaceDetailAdapter extends ArrayAdapter {
@@ -268,16 +310,16 @@ public class SceneDetailActivity extends Activity {
                 LayoutInflater vi = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                 switch (itemType) {
                     case PlaceDetailItemViewType.ITEM_VIEW_TYPE_ICON_TEXT:
-                        v = vi.inflate(R.layout.scenedetail_icon_text, null);
+                        v = vi.inflate(R.layout.scenedetail_icon_text, parent, false);
                         break;
                     case PlaceDetailItemViewType.ITEM_VIEW_TYPE_HOR_DOUBLE_TEXT:
-                        v = vi.inflate(R.layout.scenedetail_hor_double_text, null);
+                        v = vi.inflate(R.layout.scenedetail_hor_double_text, parent, false);
                         break;
                     case PlaceDetailItemViewType.ITEM_VIEW_TYPE_HEADER:
-                        v = vi.inflate(R.layout.scenedetail_header, null);
+                        v = vi.inflate(R.layout.scenedetail_header, parent, false);
                         break;
                     case PlaceDetailItemViewType.ITEM_VIEW_TYPE_REVIEW:
-                        v = vi.inflate(R.layout.scenedetail_review, null);
+                        v = vi.inflate(R.layout.scenedetail_review, parent, false);
                         break;
                 }
             }

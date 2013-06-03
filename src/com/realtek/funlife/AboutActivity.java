@@ -130,10 +130,10 @@ public class AboutActivity extends Activity {
                 LayoutInflater vi = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                 switch (itemType) {
                     case TYPE_ONE_LINE_TEXT:
-                        v = vi.inflate(R.layout.about_1_line_text_item, null);
+                        v = vi.inflate(R.layout.about_1_line_text_item, parent, false);
                         break;
                     case TYPE_TWO_LINE_TEXT:
-                        v = vi.inflate(R.layout.about_2_line_text_item, null);
+                        v = vi.inflate(R.layout.about_2_line_text_item, parent, false);
                         break;
                 }
             }

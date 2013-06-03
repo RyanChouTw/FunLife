@@ -27,32 +27,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" name="Default" comment="">
+      <change type="DELETED" beforePath="D:\Work\Project\Android\FunLife\.idea\libraries\google_play_services.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/realtek/funlife/AboutActivity.java" afterPath="$PROJECT_DIR$/src/com/realtek/funlife/AboutActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FunLife.iml" afterPath="$PROJECT_DIR$/FunLife.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/realtek/funlife/FunLifeUtils.java" afterPath="$PROJECT_DIR$/src/com/realtek/funlife/FunLifeUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/realtek/funlife/PlaceJSONParser.java" afterPath="$PROJECT_DIR$/src/com/realtek/funlife/PlaceJSONParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/realtek/funlife/SceneDetailActivity.java" afterPath="$PROJECT_DIR$/src/com/realtek/funlife/SceneDetailActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/realtek/funlife/SceneListActivity.java" afterPath="$PROJECT_DIR$/src/com/realtek/funlife/SceneListActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values-zh/strings.xml" afterPath="$PROJECT_DIR$/res/values-zh/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/res/layout/activity_main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="FunLife.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/SessionTracker.java" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1368783249795" ignored="false" />
     <file path="/strings.xml" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1369915117415" ignored="false" />
-    <file path="/activity_main.xml" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1369218883302" ignored="false" />
+    <file path="/activity_main.xml" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1370226640077" ignored="false" />
     <file path="/a.xml" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1369126618933" ignored="false" />
     <file path="/MainActivity.java" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1369221556230" ignored="false" />
     <file path="/activity_countylist.xml" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1368785231445" ignored="false" />
-    <file path="/SceneListActivity.java" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1369978087731" ignored="false" />
+    <file path="/SceneListActivity.java" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1370224761444" ignored="false" />
     <file path="/color.xml" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1368786924446" ignored="false" />
-    <file path="/Dummy.txt" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1369964113220" ignored="false" />
+    <file path="/Dummy.txt" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1370236823534" ignored="false" />
     <file path="/activity_scenelist.xml" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1368788080274" ignored="false" />
-    <file path="/fragment.java" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1369973910557" ignored="false" />
-    <file path="/AndroidManifest.xml" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1369212349829" ignored="false" />
-    <file path="/FunLifeUtils.java" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1369964932011" ignored="false" />
-    <file path="$PROJECT_DIR$/gen/com/realtek/funlife/Manifest.java" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1369040052490" ignored="false" />
-    <file path="$PROJECT_DIR$/gen/com/realtek/funlife/BuildConfig.java" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1369212612129" ignored="false" />
+    <file path="/fragment.java" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1370231251116" ignored="false" />
+    <file path="/AndroidManifest.xml" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1370227748405" ignored="false" />
+    <file path="/FunLifeUtils.java" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1370226132042" ignored="false" />
     <file path="/PlaceJSONParser.java" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1369967215837" ignored="false" />
     <file path="/listview_scene.xml" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1369045140895" ignored="false" />
     <file path="/scenelist.xml" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1369123919139" ignored="false" />
@@ -60,21 +60,24 @@
     <file path="/sample.java" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1369126630996" ignored="false" />
     <file path="/scenelist_item.xml" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1369213817115" ignored="false" />
     <file path="/CountyListActivity.java" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1369205097247" ignored="false" />
-    <file path="$PROJECT_DIR$/gen/com/realtek/funlife/R.java" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1369212463752" ignored="false" />
     <file path="/main_img_btn_nearby.xml" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1369214966604" ignored="false" />
     <file path="/activity_about.xml" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1369806664789" ignored="false" />
     <file path="/AboutActivity.java" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1369816627483" ignored="false" />
     <file path="/about_item.xml" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1369811051302" ignored="false" />
     <file path="$PROJECT_DIR$/gen/com/realtek/funlife/ABOUT_ITEM_AUTHOR.java" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1369807464148" ignored="false" />
     <file path="/scenelist_item_more.xml" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1369818926405" ignored="false" />
-    <file path="/activity_scene_detail.xml" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1369884738014" ignored="false" />
-    <file path="/SceneDetailActivity.java" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1369977726449" ignored="false" />
+    <file path="/activity_scene_detail.xml" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1370226752192" ignored="false" />
+    <file path="/SceneDetailActivity.java" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1370236465215" ignored="false" />
     <file path="/item_img_text.xml" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1369901445489" ignored="false" />
     <file path="/scenedetail_hor_double_text.xml" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1369977955191" ignored="false" />
     <file path="/scenedetail_icon_text.xml" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1369914519684" ignored="false" />
     <file path="/scenedetail_text.xml" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1369904246720" ignored="false" />
     <file path="/scenedetail_header.xml" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1369915031413" ignored="false" />
     <file path="/scenedetail_review.xml" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1369915600065" ignored="false" />
+    <file path="/activity_map.xml" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1370231144677" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/android/lib/android.jar!/org/jetbrains/android/android.xsd" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1369992976673" ignored="false" />
+    <file path="/MapActivity.java" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1370229597917" ignored="false" />
+    <file path="$PROJECT_DIR$/gen/com/realtek/funlife/BuildConfig.java" changelist="b73ea4a5-ebdc-4cc7-abbd-1fff058701bc" time="1370228737772" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +130,7 @@
       </breakpoint>
     </breakpoint_any>
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/com/realtek/funlife/SceneDetailActivity.java" line="231" class="com.realtek.funlife.SceneDetailActivity.PlaceDetailAdapter" package="com.realtek.funlife">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/realtek/funlife/SceneDetailActivity.java" line="273" class="com.realtek.funlife.SceneDetailActivity.PlaceDetailAdapter" package="com.realtek.funlife">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -152,61 +155,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PlaceJSONParser.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/realtek/funlife/PlaceJSONParser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="52" selection-start="1311" selection-end="1318" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#988#1012#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scenedetail_icon_text.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/scenedetail_icon_text.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="33" selection-start="593" selection-end="606" vertical-scroll-proportion="-8.08">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scenedetail_hor_double_text.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/scenedetail_hor_double_text.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="37" selection-start="726" selection-end="726" vertical-scroll-proportion="-11.4">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SceneDetailActivity.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="SceneDetailActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/realtek/funlife/SceneDetailActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="112" column="82" selection-start="3774" selection-end="3774" vertical-scroll-proportion="0.0">
+            <state line="315" column="38" selection-start="12519" selection-end="12526" vertical-scroll-proportion="0.42628774">
               <folding>
-                <element signature="e#1043#1052#0" expanded="true" />
-                <element signature="e#7511#7524#0" expanded="true" />
-                <element signature="e#11290#11320#0" expanded="true" />
-                <element signature="e#11717#11748#0" expanded="true" />
-                <element signature="e#12152#12186#0" expanded="true" />
-                <element signature="e#12594#12627#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JSONArray.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/org/json/JSONArray.class">
+      <file leaf-file-name="MapActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/realtek/funlife/MapActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="31" selection-start="3285" selection-end="3285" vertical-scroll-proportion="0.0">
+            <state line="41" column="13" selection-start="1457" selection-end="1457" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_map.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/activity_map.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="71" selection-start="548" selection-end="548" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1370231375914" expanded="true" signature="114:566" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="55" column="47" selection-start="2556" selection-end="2556" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -215,7 +201,7 @@
       <file leaf-file-name="activity_scene_detail.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/activity_scene_detail.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="49" selection-start="438" selection-end="438" vertical-scroll-proportion="-6.84">
+            <state line="10" column="15" selection-start="454" selection-end="454" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -224,10 +210,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scenedetail_review.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/scenedetail_review.xml">
+      <file leaf-file-name="activity_main.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/activity_main.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="55" selection-start="563" selection-end="563" vertical-scroll-proportion="-5.32">
+            <state line="6" column="24" selection-start="324" selection-end="324" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -236,33 +222,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FunLifeUtils.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/realtek/funlife/FunLifeUtils.java">
+      <file leaf-file-name="activity_about.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/activity_about.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="0" selection-start="2844" selection-end="2844" vertical-scroll-proportion="0.0">
+            <state line="6" column="57" selection-start="316" selection-end="316" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SceneListActivity.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/realtek/funlife/SceneListActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="168" column="42" selection-start="6501" selection-end="6501" vertical-scroll-proportion="0.5689655">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#5271#5295#0" expanded="true" />
-                <element signature="e#5297#5330#0" expanded="true" />
-                <element signature="e#11488#11519#0" expanded="true" />
-              </folding>
-            </state>
+          <provider editor-type-id="android-designer">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scenedetail_header.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/scenedetail_header.xml">
+      <file leaf-file-name="activity_countylist.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/activity_countylist.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="47" selection-start="303" selection-end="321" vertical-scroll-proportion="-5.32">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -289,22 +264,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/res/layout/about_1_line_text_item.xml" />
-        <option value="$PROJECT_DIR$/src/com/realtek/funlife/AboutActivity.java" />
-        <option value="$PROJECT_DIR$/res/layout/scenelist_item_more.xml" />
-        <option value="$PROJECT_DIR$/res/layout/activity_scene_detail.xml" />
-        <option value="$PROJECT_DIR$/res/layout/item_img_text.xml" />
-        <option value="$PROJECT_DIR$/res/layout/scenedetail_text.xml" />
-        <option value="$PROJECT_DIR$/res/layout/scenedetail_icon_text.xml" />
         <option value="$PROJECT_DIR$/res/layout/scenedetail_header.xml" />
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/res/values-zh/strings.xml" />
         <option value="$PROJECT_DIR$/res/layout/scenedetail_review.xml" />
-        <option value="$PROJECT_DIR$/src/com/realtek/funlife/FunLifeUtils.java" />
         <option value="$PROJECT_DIR$/src/com/realtek/funlife/PlaceJSONParser.java" />
-        <option value="$PROJECT_DIR$/src/com/realtek/funlife/SceneDetailActivity.java" />
         <option value="$PROJECT_DIR$/res/layout/scenedetail_hor_double_text.xml" />
         <option value="$PROJECT_DIR$/src/com/realtek/funlife/SceneListActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/realtek/funlife/AboutActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/realtek/funlife/FunLifeUtils.java" />
+        <option value="$PROJECT_DIR$/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/res/layout/activity_about.xml" />
+        <option value="$PROJECT_DIR$/res/layout/activity_scene_detail.xml" />
+        <option value="$PROJECT_DIR$/src/com/realtek/funlife/MapActivity.java" />
+        <option value="$PROJECT_DIR$/res/layout/activity_map.xml" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/com/realtek/funlife/SceneDetailActivity.java" />
       </list>
     </option>
   </component>
@@ -362,7 +337,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -373,12 +348,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="External Libraries" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FunLife" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -409,169 +378,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FunLife" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FunLife" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values-zh" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FunLife" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FunLife" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FunLife" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FunLife" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FunLife" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FunLife" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="menu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FunLife" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FunLife" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FunLife" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FunLife" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawable-xhdpi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FunLife" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FunLife" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawable-ldpi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FunLife" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FunLife" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawable-hdpi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="C:/Program Files/Android/android-sdk/extras/android/compatibility/v13/android-support-v13.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/google_play_services/libproject/google-play-services_lib/libs/google-play-services.jar!/" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -579,6 +408,22 @@
     </key>
   </component>
   <component name="RunManager" selected="Android Application.FunLife">
+    <configuration default="false" name="MapActivity" type="AndroidRunConfigurationType" factoryName="Android Application" temporary="true">
+      <module name="FunLife" />
+      <option name="ACTIVITY_CLASS" value="com.realtek.funlife.MapActivity" />
+      <option name="MODE" value="specific_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="USB_DEVICE" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -686,9 +531,15 @@
       <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Android Application.FunLife" />
+      <item index="1" class="java.lang.String" itemvalue="Android Application.MapActivity" />
     </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Android Application.MapActivity" />
+      </list>
+    </recent_temporary>
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -742,11 +593,16 @@
       <workItem from="1369805193380" duration="17695000" />
       <workItem from="1369879919551" duration="22828000" />
       <workItem from="1369964055042" duration="13512000" />
+      <workItem from="1369988166099" duration="116000" />
+      <workItem from="1369988397197" duration="132000" />
+      <workItem from="1369991012976" duration="5652000" />
+      <workItem from="1370223941385" duration="11171000" />
+      <workItem from="1370236808768" duration="532000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128764000" />
+    <option name="totallyTimeSpent" value="146367000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -775,25 +631,25 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852808" sideWeight="0.8183333" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.355" sideWeight="0.6479514" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32833335" sideWeight="0.6479514" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27833334" sideWeight="0.35128984" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20378788" sideWeight="0.43" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.335" sideWeight="0.57348484" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41333333" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32833335" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.77" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20378788" sideWeight="0.645" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2189394" sideWeight="0.6716667" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36956522" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="40" y="185" width="1320" height="283" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25075758" sideWeight="0.645" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25075758" sideWeight="0.665" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17651515" sideWeight="0.665" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17651515" sideWeight="0.645" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.335" sideWeight="0.57348484" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3986135" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -863,21 +719,74 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/res/layout/scenedetail_icon_text.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="33" selection-start="593" selection-end="606" vertical-scroll-proportion="0.0" />
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/scenedetail_review.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="55" selection-start="563" selection-end="563" vertical-scroll-proportion="0.0" />
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/scenedetail_hor_double_text.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="37" selection-start="726" selection-end="726" vertical-scroll-proportion="0.0" />
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/realtek/funlife/SceneListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="277" column="34" selection-start="10319" selection-end="10326" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/realtek/funlife/AboutActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="144" column="60" selection-start="5701" selection-end="5701" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="135" column="38" selection-start="5301" selection-end="5308" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1595#1623#0" expanded="true" />
+            <element signature="e#2523#2551#0" expanded="true" />
+            <element signature="e#2584#2624#0" expanded="true" />
+            <element signature="e#5695#5717#0" expanded="true" />
+            <element signature="e#5901#5921#0" expanded="true" />
+            <element signature="e#6100#6127#0" expanded="true" />
+            <element signature="e#6313#6335#0" expanded="true" />
+            <element signature="e#6455#6476#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/realtek/funlife/FunLifeUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="49" selection-start="2481" selection-end="2526" vertical-scroll-proportion="0.0">
+        <state line="77" column="48" selection-start="2753" selection-end="2770" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/about_2_line_text_item.xml">
+    <entry file="file://$PROJECT_DIR$/res/layout/activity_about.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="57" selection-start="316" selection-end="316" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/activity_countylist.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
@@ -887,33 +796,19 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/scenelist_item.xml">
+    <entry file="file://$PROJECT_DIR$/res/layout/activity_main.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="40" selection-start="371" selection-end="371" vertical-scroll-proportion="0.0">
+        <state line="6" column="24" selection-start="324" selection-end="324" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values-zh/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="35" selection-start="1818" selection-end="1818" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/realtek/funlife/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="0" selection-start="1991" selection-end="2262" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/activity_scene_detail.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="49" selection-start="438" selection-end="438" vertical-scroll-proportion="-6.84">
+        <state line="10" column="15" selection-start="454" selection-end="454" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -921,91 +816,47 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/realtek/funlife/FunLifeUtils.java">
+    <entry file="file://$PROJECT_DIR$/google_play_services/samples/maps/src/com/example/mapdemo/MultiMapDemoActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="0" selection-start="2844" selection-end="2844" vertical-scroll-proportion="0.0">
+        <state line="22" column="75" selection-start="805" selection-end="805" vertical-scroll-proportion="0.4075067" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/google_play_services/samples/plus/src/com/google/android/gms/samples/plus/PlusClientFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="50" selection-start="1010" selection-end="1010" vertical-scroll-proportion="0.536193" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/realtek/funlife/MapActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="13" selection-start="1457" selection-end="1457" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/realtek/funlife/PlaceJSONParser.java">
+    <entry file="file://$PROJECT_DIR$/res/layout/activity_map.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="52" selection-start="1311" selection-end="1318" vertical-scroll-proportion="0.0">
+        <state line="11" column="71" selection-start="548" selection-end="548" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#988#1012#0" expanded="true" />
+            <marker date="1370231375914" expanded="true" signature="114:566" placeholder="..." />
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/org/json/JSONArray.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="31" selection-start="3285" selection-end="3285" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/scenedetail_header.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="47" selection-start="303" selection-end="321" vertical-scroll-proportion="-5.32">
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="android-designer">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/scenedetail_icon_text.xml">
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="33" selection-start="593" selection-end="606" vertical-scroll-proportion="-8.08">
+        <state line="55" column="47" selection-start="2556" selection-end="2556" vertical-scroll-proportion="0.0">
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/realtek/funlife/SceneDetailActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="82" selection-start="3774" selection-end="3774" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#1043#1052#0" expanded="true" />
-            <element signature="e#7511#7524#0" expanded="true" />
-            <element signature="e#11290#11320#0" expanded="true" />
-            <element signature="e#11717#11748#0" expanded="true" />
-            <element signature="e#12152#12186#0" expanded="true" />
-            <element signature="e#12594#12627#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/scenedetail_review.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="55" selection-start="563" selection-end="563" vertical-scroll-proportion="-5.32">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/scenedetail_hor_double_text.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="37" selection-start="726" selection-end="726" vertical-scroll-proportion="-11.4">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/realtek/funlife/SceneListActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="168" column="42" selection-start="6501" selection-end="6501" vertical-scroll-proportion="0.5689655">
+        <state line="315" column="38" selection-start="12519" selection-end="12526" vertical-scroll-proportion="0.42628774">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5271#5295#0" expanded="true" />
-            <element signature="e#5297#5330#0" expanded="true" />
-            <element signature="e#11488#11519#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1062,7 +913,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>FunLife</last-edited>
+          <last-edited>google-play-services_lib</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1086,7 +937,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>android-support-v13</last-edited>
+          <last-edited>google-play-services</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

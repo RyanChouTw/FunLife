@@ -66,7 +66,7 @@ public class SceneListActivity extends FragmentActivity implements LocationListe
             else {
                 HashMap<String, String> placeInfo = mPlacesList.get(position);
                 Intent intentStartSceneDetailActivity = new Intent(SceneListActivity.this, SceneDetailActivity.class);
-                intentStartSceneDetailActivity.putExtra(FunLifeUtils.KEY_PLACE_REFERENCE, placeInfo.get("reference"));
+                intentStartSceneDetailActivity.putExtra(FunLifeUtils.INTENT_KEY_PLACE_REFERENCE, placeInfo.get("reference"));
                 startActivity(intentStartSceneDetailActivity);
             }
         }
@@ -275,9 +275,9 @@ public class SceneListActivity extends FragmentActivity implements LocationListe
 
             if (v == null) {
                 if (itemType == SCENELIST_ITEM_TYPE_NORMAL) {
-                    v = vi.inflate(R.layout.scenelist_item, null);
+                    v = vi.inflate(R.layout.scenelist_item, parent, false);
                 } else {
-                    v = vi.inflate(R.layout.scenelist_item_more, null);
+                    v = vi.inflate(R.layout.scenelist_item_more, parent, false);
                 }
             }
 
