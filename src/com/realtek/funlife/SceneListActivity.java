@@ -1,7 +1,6 @@
 package com.realtek.funlife;
 
 import android.app.Dialog;
-import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -27,6 +26,8 @@ import android.widget.TextView;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
+import com.handmark.pulltorefresh.library.PullToRefreshBase;
+import com.handmark.pulltorefresh.library.PullToRefreshListView;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -39,14 +40,13 @@ import java.util.Locale;
 
 public class SceneListActivity extends FragmentActivity implements LocationListener{
 
-    private ListView mSceneList = null;
-    private ProgressDialog mProgressDlg = null;
-
+    private PullToRefreshListView mSceneList = null;
     private PlaceAdapter mAdapter = null;
     private List<HashMap<String, String>> mPlacesList = null;
     private List<Bitmap> mPlacesIconList = null;
     private String mNextPageToken;
     private boolean mIsMoreResult = false;
+    private boolean mIsSearchCompleted = true;
 
     // A request to connect to Location Services
     private LocationManager mLocationManager;
@@ -59,18 +59,10 @@ public class SceneListActivity extends FragmentActivity implements LocationListe
             // TODO Auto-generated method stub
             Log.d("SceneListActivity", "AdapterView.OnItemClickListener.onItemClick() - get item number " + position);
 
-            ListView listView = (ListView) findViewById(R.id.scenelist_list);
-            listView.setSelection(position);
-
-            if (position == mPlacesList.size()) {
-                startSearchPlace(true);
-            }
-            else {
-                HashMap<String, String> placeInfo = mPlacesList.get(position);
-                Intent intentStartSceneDetailActivity = new Intent(SceneListActivity.this, SceneDetailActivity.class);
-                intentStartSceneDetailActivity.putExtra(FunLifeUtils.INTENT_KEY_PLACE_REFERENCE, placeInfo.get("reference"));
-                startActivity(intentStartSceneDetailActivity);
-            }
+            HashMap<String, String> placeInfo = mPlacesList.get((int)id);
+            Intent intentStartSceneDetailActivity = new Intent(SceneListActivity.this, SceneDetailActivity.class);
+            intentStartSceneDetailActivity.putExtra(FunLifeUtils.INTENT_KEY_PLACE_REFERENCE, placeInfo.get("reference"));
+            startActivity(intentStartSceneDetailActivity);
         }
     };
 
@@ -79,7 +71,17 @@ public class SceneListActivity extends FragmentActivity implements LocationListe
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_scenelist);
 
-        mSceneList = (ListView) findViewById(R.id.scenelist_list);
+        mSceneList = (PullToRefreshListView) findViewById(R.id.scenelist_list);
+        mSceneList.setMode(PullToRefreshBase.Mode.PULL_FROM_END);
+        mSceneList.setOnRefreshListener(new PullToRefreshBase.OnRefreshListener<ListView>() {
+            @Override
+            public void onRefresh(PullToRefreshBase<ListView> refreshView) {
+                if (mIsMoreResult == true)
+                    startSearchPlace(true);
+                else
+                    mSceneList.onRefreshComplete();
+            }
+        });
         mPlacesList = new ArrayList<HashMap<String,String>>();
         mPlacesIconList = new ArrayList<Bitmap>();
         mAdapter = new PlaceAdapter(this, R.layout.scenelist_item, mPlacesList);
@@ -150,10 +152,10 @@ public class SceneListActivity extends FragmentActivity implements LocationListe
     public void startSearchPlace(boolean bMore) {
         StringBuilder sb;
 
-        if (mProgressDlg != null)
+        if (mIsSearchCompleted == false)
             return;
-        mProgressDlg = ProgressDialog.show(this, getString(R.string.wait), getString(R.string.retrieve_data));
 
+        mIsSearchCompleted = false;
         if (bMore) {
             sb = new StringBuilder("https://maps.googleapis.com/maps/api/place/nearbysearch/json?");
             sb.append("location="+mCurrentLocation.getLatitude()+","+mCurrentLocation.getLongitude());
@@ -184,6 +186,7 @@ public class SceneListActivity extends FragmentActivity implements LocationListe
         String data = null;
 
         protected String doInBackground(String... url) {
+
             try {
                 data = FunLifeUtils.downloadUrl(url[0]);
             }catch(Exception e) {
@@ -195,6 +198,7 @@ public class SceneListActivity extends FragmentActivity implements LocationListe
         protected void onPostExecute(String result) {
             ParserTask parserTask = new ParserTask();
             parserTask.execute(result);
+            super.onPostExecute(result);
         }
     }
 
@@ -204,6 +208,7 @@ public class SceneListActivity extends FragmentActivity implements LocationListe
         // Invoked by execute() method of this object
         @Override
         protected List<HashMap<String,String>> doInBackground(String... jsonData) {
+
             List<HashMap<String,String>> places = null;
             PlaceJSONParser placeJsonParser = new PlaceJSONParser();
 
@@ -237,17 +242,19 @@ public class SceneListActivity extends FragmentActivity implements LocationListe
 
         protected void onPostExecute(List<HashMap<String,String>> result) {
             mAdapter.notifyDataSetChanged();
-            mProgressDlg.dismiss();
-            mProgressDlg = null;
+            mIsSearchCompleted = true;
+            mSceneList.onRefreshComplete();
+            if (mIsMoreResult == false) {
+                mSceneList.setMode(PullToRefreshBase.Mode.DISABLED);
+            }
+            else {
+                mSceneList.setMode(PullToRefreshBase.Mode.PULL_FROM_END);
+            }
+            super.onPostExecute(result);
         }
     }
 
     public class PlaceAdapter extends ArrayAdapter<HashMap<String, String>> {
-
-        private static final int SCENELIST_ITEM_TYPE_NORMAL = 0;
-        private static final int SCENELIST_ITEM_TYPE_MORE = 1;
-        private static final int SCENELIST_ITEM_TYPE_NUM = 2;
-
         private List<HashMap<String, String>> items;
 
         public PlaceAdapter(Context context, int textViewResourceId, List<HashMap<String, String>> items) {
@@ -258,16 +265,6 @@ public class SceneListActivity extends FragmentActivity implements LocationListe
         @Override
         public int getCount() {
             return items.size();
-        }
-
-        @Override
-        public int getItemViewType(int position) {
-            return SCENELIST_ITEM_TYPE_NORMAL;
-        }
-
-        @Override
-        public int getViewTypeCount() {
-            return SCENELIST_ITEM_TYPE_NUM;
         }
 
         @Override

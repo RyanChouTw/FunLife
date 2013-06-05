@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FunLife.iml" filepath="$PROJECT_DIR$/FunLife.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../PullToRefresh/extras/PullToRefreshListFragment/PullToRefreshListFragment.iml" filepath="$PROJECT_DIR$/../PullToRefresh/extras/PullToRefreshListFragment/PullToRefreshListFragment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../PullToRefresh/extras/PullToRefreshViewPager/PullToRefreshViewPager.iml" filepath="$PROJECT_DIR$/../PullToRefresh/extras/PullToRefreshViewPager/PullToRefreshViewPager.iml" />
       <module fileurl="file://$PROJECT_DIR$/google_play_services/libproject/google-play-services_lib/google-play-services_lib.iml" filepath="$PROJECT_DIR$/google_play_services/libproject/google-play-services_lib/google-play-services_lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../PullToRefresh/library/library.iml" filepath="$PROJECT_DIR$/../PullToRefresh/library/library.iml" />
     </modules>
   </component>
 </project>

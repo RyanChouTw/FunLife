@@ -54,4 +54,7 @@
     <string name="string_addr">ADDR</string>
     <string name="string_website">Website</string>
     <string name="string_review">Reviews</string>
+    <string name="string_scroll_to_refresh">Scroll down to refresh</string>
+    <string name="string_release_to_refresh">Release to refresh</string>
+    <string name="string_refreshing">Refreshing...</string>
 </resources>

@@ -49,4 +49,7 @@
     <string name="string_addr">地址</string>
     <string name="string_website">網址</string>
     <string name="string_review">評論</string>
+    <string name="string_scroll_to_refresh">往下滑動以取得更多資料</string>
+    <string name="string_release_to_refresh">放開更新</string>
+    <string name="string_refreshing">更新中‧‧‧</string>
 </resources>
